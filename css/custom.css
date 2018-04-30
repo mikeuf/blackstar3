@@ -453,7 +453,6 @@ div.column-block {
   }
 
   #resume-body ul {
-    padding-bottom: 1.5em;
   }
 
   #resume-body ul li {
@@ -543,6 +542,10 @@ div.column-block {
     #resume-button-wrapper {
       text-align: right;
       padding: 0 6% 0 0;
+    }
+
+    #resume-education {
+      list-style-type: none;
     }
 
     article {
