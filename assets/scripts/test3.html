@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="contactFormSubmit.js"></script>
+</head>
+<body>
+
+
+<div id="contact-form">
+<form name="form1" method="post" action="javascript:contactFormSubmit();">
+<label>Name: <br /><input type="text" id="Name" autofocus></label><br /><br />
+<label>Email: <br /><input type="email" id="Email"></label><br /><br />
+<label>Message:<br /><textarea id="Message" class="message" cols="80" rows="20"></textarea></label><br /><br />
+<br /><br />
+<div class="g-recaptcha" data-sitekey="6LePg0cUAAAAAI8z5HioIt1LcmEgGAYf0_H7xlWW"></div>
+<br /><br />
+<input type="submit" value="Submit" />
+</form>
+</div>
+<!--
+<script>
+
+function contactFormSubmit() {
+
+  if (grecaptcha.getResponse() == ""){
+    alert("Complete the reCAPTCHA verification before submitting.");
+  } else {
+
+
+    var formName = document.getElementById("Name").value;
+    var formEmail = document.getElementById("Email").value;
+    var formMessage = document.getElementById("Message").value;
+    var data = JSON.stringify({ 'name' : formName, 'email' : formEmail, 'message' : formMessage });
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+	document.getElementById('contact-form').innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("POST", "https://www.mikepblack.com:8080/submit-contact-form", true);
+    xhttp.setRequestHeader("Content-Type", "application/json");
+    xhttp.send(data);
+
+  } 
+}
+</script>
+-->
+
+</body>
+</html>

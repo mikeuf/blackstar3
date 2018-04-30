@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<form name="form1" method="post" action="javascript:loadXMLDoc();">
+<label>Name: <br /><input type="text" id="Name" autofocus></label><br /><br />
+<label>Email: <br /><input type="email" name="Email"></label><br /><br />
+<label>Message:<br /><textarea id="Message" class="message" cols="80" rows="20"></textarea></label><br /><br />
+<!--
+<label>In what year did Columbus sail the Ocean Blue (spam filter)?<br /><input type="number"
+name="SpamCheck" min="0"></label> -->
+<br /><br />
+<input type="submit" value="Submit" />
+</form>
+<!--
+<form action="javascript:loadXMLDoc();" name="contact-form" method="post">
+
+Name:<br>
+  <input type="text" name="name">
+  <br>
+  Email:<br>
+  <input type="text" name="email">
+
+<textarea id="message" class="text" rows="20" cols="80" name="message"></textarea><br />
+  <input type="submit" value="Submit">
+</form>
+-->
+<div id="demo">
+</div>
+<div id="demo2">
+</div>
+<div id="demo3">
+</div>
+<div id="demo4">
+</div>
+<script>
+
+function loadXMLDoc() {
+ var formName =  document.getElementById("Name").value;
+ var formMessage =  document.getElementById("Message").value;
+ document.getElementById('demo2').innerHTML = "Name: " + document.getElementById("Name").value;
+ document.getElementById('demo3').innerHTML = "Message: " + document.getElementById("Message").value;
+// var data = document.getElementById("Name").value;
+var data = JSON.stringify({ 'name' : formName, 'email' : 'joe.blow@testing123.com', 'message' : formMessage });
+//var data = JSON.stringify({name: "Dennis", address: {city: "Dub", country: "IE"}});
+ document.getElementById('demo4').innerHTML = "Send: " + data;
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("POST", "https://www.mikepblack.com:8080/submit-contact-form", true);
+ <!-- xhttp.setRequestHeader ("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8"); -->
+ <!-- xhttp.setRequestHeader ("Content-Type", "application/x-www-form-urlencoded"); -->
+xhttp.setRequestHeader("Content-Type", "application/json");
+  xhttp.send(data);
+} 
+</script>
+
+</body>
+</html>

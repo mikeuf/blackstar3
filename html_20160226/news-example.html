@@ -1,0 +1,55 @@
+<?php
+require("hostbaby");
+?>
+<html>
+<head>
+  <title>michaelpatrickblack.com News</title>
+  <style type="text/css">
+   /* News CSS */
+   body { background-color: darkslategray;
+          color: gold;
+          font-family: "trebuchet ms",tahoma,verdana,sans-serif;
+          font-size: 10pt;
+        }
+   a { color: mediumvioletred; text-decoration: none; }
+   a:hover { text-decoration: underline; }
+   .home { color: gold; font-size: 12pt; }
+
+   .news { color: black; /* text color */
+           background-color: darkkhaki;
+           width: 550px;
+           padding: 10px;
+           text-align: center;
+           border: 1px solid black;
+           }
+   .news_entry {  }
+   .news_date { color: darkblue;
+                background-color: darkgoldenrod;
+                font-weight: bold;
+                padding: 2px;
+                line-height: 14pt;
+                border: 1px solid black;
+                }
+   .news_text { color: darkred;
+                font-weight: bold;
+                text-align: top;
+                margin: 10px;
+                /* text-align: left; */
+                }
+  </style>
+</head>
+<body>
+
+<div align="center">
+
+<h1>michaelpatrickblack.com News</h1>
+
+<?php show_news(); ?>
+
+<br>
+<a class="home" href="/">Go Home</a><br>
+
+</div>
+
+</body>
+</html>

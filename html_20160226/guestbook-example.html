@@ -1,0 +1,77 @@
+<?php
+require "hostbaby";
+?>
+<html>
+<head>
+  <title>michaelpatrickblack.com Guestbook</title>
+  <style type="text/css">
+   /* Guestbook CSS */
+   body { background-color: darkslategray;
+          color: gold;
+          font-family: "trebuchet ms",tahoma,verdana,sans-serif;
+          font-size: 10pt;
+        }
+   td { color: black; }
+
+   a { color: mediumvioletred; text-decoration: none; }
+   a:hover { text-decoration: underline; }
+   .big { font-size: 24pt; font-weight: bold }
+   .home { color: gold; font-size: 12pt; }
+
+   .guestbook { font-family: Verdana, Arial, Helvetica, sans-serif;
+                font-size: 10pt;
+                color: black; /* text color */
+                }
+   .guestbook_entry { }
+   .guestbook_name { font-weight: bold; }
+   .guestbook_date { }
+   .guestbook_comment { }
+
+  </style>
+</head>
+<body>
+
+<div align="center">
+<table width="600" border="0" cellpadding="5">
+  <tr bgcolor="#EEEEEE"> 
+    <td align="center"> 
+      <p><span class="big">Say hello! Introduce yourself!</span></p>
+
+      <?php if(isset($_SESSION['moderate_message'])) print '<p>' . $_SESSION['moderate_message'] . '</p>'; ?>
+
+      <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
+      <table border="0" cellspacing="0" cellpadding="5" bgcolor="#CCCCCC" align="center">
+        <tr> 
+          <td align="right">Name:</td>
+          <td><input type="text" name="gbname" size="32" maxlength="64"></td>
+        </tr>
+        <tr> 
+          <td align="right">Email Address:</td>
+          <td><input type="text" name="gbaddress" size="32" maxlength="64"></td>
+        </tr>
+        <tr> 
+          <td align="right" valign="top">Comment:</td>
+          <td><textarea wrap name="gbcomment" cols="29" rows="5"></textarea></td>
+        </tr>
+        <tr> 
+          <td valign="top" align="center" colspan="2"> 
+            <input type="submit" value="Submit Your Comment">
+          </td>
+        </tr>
+      </table>
+      </form>
+
+      <hr size="1">
+<?php
+	show_guestbook();
+?>
+
+      <br>
+      <a href="/">Go Home</a><br><br>
+    </td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>

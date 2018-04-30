@@ -1,0 +1,213 @@
+
+/* Color Reference:
+   Garnet == #782F40
+   Gold == #CEB888
+ */
+
+
+body
+{
+  font-family: "Verdana", sans-serif;
+background: #DADADA;
+background-attachment:fixed;
+height:100%;
+margin-top: 1em;
+margin-right: 0;
+margin-bottom: 1em;
+margin-left: 3em;
+}
+
+h1 
+{
+
+color: #000;
+margin-top: 0;
+margin-right: 0;
+margin-bottom: 0;
+margin-left: 0; 
+       font-family: "Verdana", sans-serif;
+}
+
+
+input
+{
+border-radius:5px;
+    border:2px solid #DADADA;
+
+}
+
+select
+{
+border-radius:5px;
+    border:2px solid #DADADA;
+
+}
+
+.message
+{
+border-radius:5px;
+    border:2px solid #DADADA;
+}
+
+.dateheading
+{
+font-size: 0.5em;
+color: #666;
+}
+
+.update
+{
+margin: 0;
+padding 0;
+}
+
+
+.date
+{
+margin-right: -10px;
+}
+
+.areaCode
+{
+width: 3em;
+margin-right: -8px;
+}
+
+.restOfPhoneNum
+{
+width: 6em;
+}
+
+.streetNum
+{
+width: 4em;
+margin-right: -10px;
+}
+
+.zip
+{
+width: 4em;
+margin-right: -5px;
+}
+
+.lastFour
+{
+width: 3em;
+}
+
+
+.main 
+{
+width: 50em;
+background: linear-gradient(to bottom, #FFF, #EAEBDB);
+margin: 0;
+padding-top: 2em;
+padding-bottom: 2em;
+padding-left: 3em;
+padding-right: 3em;
+       background-color: #FFFFFF;
+line-height: 1.5em;
+border-top-right-radius: 15px;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+/*box-shadow: 0 0 500px 50px #CEB888;*/
+       text-align: left;
+}
+
+#example
+{
+width: 50em;
+background: linear-gradient(to bottom, #FFF, #EAEBDB);
+margin: 0;
+padding-top: 2em;
+padding-bottom: 2em;
+padding-left: 3em;
+padding-right: 3em;
+       background-color: #FFFFFF;
+line-height: 1.5em;
+border-top-right-radius: 15px;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+/* box-shadow: 0 0 500px 50px #CEB888; */
+       text-align: left;
+}
+
+.footer
+{
+color: #000;
+font-size: 0.75em;
+margin-top: 1em;
+}
+
+
+
+#sddm
+{	
+margin: 0;
+padding: 0;
+         z-index: 3;
+}
+
+#sddm li
+{	margin: 0;
+padding: 0;
+         list-style: none;
+float: left;
+}
+
+/* top buttons */
+#sddm li a
+{	
+display: block;
+padding: 0.25em;
+margin-right: 1px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+width: 9em;
+background: #782F40;
+/* background: linear-gradient(to bottom, #EAEBDB, #FFF); */
+color: #FFF;
+       text-align: center;
+       text-decoration: none;
+}
+
+/* top buttons when hovering */
+#sddm li a:hover
+{	
+background: #CEB888;
+color: #000;
+}
+
+/* invisible, but required for menu */
+#sddm div
+{	position: absolute;
+visibility: hidden;
+
+}
+
+/* drop-down menu */
+#sddm div a
+{
+	position: relative;
+display: block;
+margin: 0;
+padding: 0.5em;
+border-radius: 0;
+width: auto;
+       white-space: nowrap;
+       text-align: left;
+       text-decoration: none;
+background: #CEB888;
+color: #000;
+font-size: 1em;
+
+}
+
+/* highlight of drop-down buttons */
+#sddm div a:hover
+{
+background: #782F40;
+color: #FFF;
+font-size: 1em;
+}
+

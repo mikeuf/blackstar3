@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>
+      Mike Black
+    </title>
+    <!-- meta tags --> 
+    <meta charset="utf-8"> 
+    <meta name="robots" content="noindex"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
+
+    <!-- custom CSS --> 
+    <link rel="stylesheet" type="text/css" href="css/custom.css" /> 
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- google fonts --> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,600italic,800,800italic,700italic' rel='stylesheet' type='text/css'> 
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'> 
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'> 
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'> 
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'> 
+    <link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'> 
+    <link href='https://fonts.googleapis.com/css?family=Paytone One' rel='stylesheet'> 
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'> 
+    <link href='https://fonts.googleapis.com/css?family=Cabin Condensed' rel='stylesheet'> 
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500,600,700,800,900" rel="stylesheet"> 
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="assets/scripts/contactFormSubmit.js"></script>
+
+
+  </head> 
+
+  <body> 
+    <div class='header-frame'> 
+      <div class='header-wrapper'>
+        <div class='header-contents-inner'>
+          <!-- logo -->
+          <div class='logo-wrapper'>
+            <a href='https://www.mikepblack.com'>
+              <img src="img/mikepblack_com_logo_vector_darkgray.svg">
+            </a>
+          </div>
+          <div class='nav-menu'>
+            <ul>
+            <!-- about me -->
+            <li class='nav-list'>
+              <a class='nav-link' href="about.html">
+                <i class="fa fa-id-card-o"></i><br />
+                About Me
+              </a>
+            </li> 
+            <!-- resume -->
+            <li class='nav-list'>
+              <a class='nav-link' href="resume.html">
+                <i class="fa fa-file-text-o"></i><br />
+                Résumé
+              </a>
+            </li>
+            <!-- projects -->
+            <li class='nav-list'>
+              <a class='nav-link' href="https://github.com/mikeuf" target="_blank">
+                <i class="fa fa-cubes"></i><br />
+                Projects
+              </a>
+            </li>
+            <!-- contact -->
+            <li class='nav-list'>
+              <a class='nav-link' href="contact.html">
+                <i class="fa fa-envelope-o"></i><br/>
+                Contact
+              </a>
+            </li> 
+            </ul> 
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class='main-outer'>
+      <div class='main-inner'>

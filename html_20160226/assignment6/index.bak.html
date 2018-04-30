@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Assignment 6 - Mike Black</title>
+<link rel="stylesheet" type="text/css" href="http://www.michaelpatrickblack.com/css/cop4813.css">
+<script type="text/javascript"
+src="http://www.michaelpatrickblack.com/js/sddm.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"
+type="text/javascript"></script> 
+<script src="http://code.highcharts.com/highcharts.js"></script> 
+<script src="http://code.highcharts.com/modules/exporting.js"></script> 
+<script type="text/javascript"
+src="http://www.michaelpatrickblack.com/assignment6/js/cicalc.js"></script>
+
+
+</head>
+<body>
+<h1>
+Mike Black
+</h1>
+
+<!-- BEGIN DROPDOWN MENU STUFF -->
+<ul id="sddm">
+<li><a href="http://www.michaelpatrickblack.com" 
+onmouseover="mopen('m1')" 
+onfocus="mopen('m1')" 
+onblur="mclosetime()" 
+onmouseout="mclosetime()">Back</a>
+<div id="m1" 
+onmouseover="mcancelclosetime()" 
+onfocus="mcancelclosetime()" 
+onblur="mclosetime()"
+onmouseout="mclosetime()">
+</div>
+</li>
+</ul>
+<div style="clear:both"></div>
+<!-- END DROPDOWN MENU STUFF -->
+
+<div class="main" id="parent">
+
+JSFiddle:<br />
+<a
+href="http://jsfiddle.net/mblack101/g6L4b8mt/">http://jsfiddle.net/mblack101/g6L4b8mt/</a>
+<br /><br />
+
+Compound Interest Calculator<br/><br>
+Final Value = Principal<sup>(Years)</sup><br/><br/>
+
+     Input Principal <input type="text" id="p" size="5" /><br/>
+     Input Interest <input type="text" id="i" size="5" /><br/>
+     Input Years <input type="text" id="y" size="5" /><br/>
+<br/>
+    
+<input type="button" value="Submit" id="calculate" />
+<input type="button" value="Plot" id="plot" />
+<br/><br />
+<div class="mainchild" id="output"></div> 
+
+<div id="plot" style="min-width: 400px; height: 400px; z-index=100;  margin: 0 auto"></div>
+
+<script>
+
+function calculateF(p, i, y) {
+    i = 1 + i/100;
+    var f = p * Math.pow(i,y); // calculate final value
+    f = Math.round(100 * f)/100; // round to hundredths
+    return f;
+
+}
+
+function calculate() {
+    
+    var p = Number($('#p').val());
+    var i = Number($('#i').val());
+    var y = Number($('#y').val());
+    var f = calculateF(p, i, y);
+    var j = 0;
+    var html = "";
+
+    
+
+    /*
+    
+    for (x = xmin; x <= xmax; x++) {
+        y = calculateY(a, b, c, x);
+        s += " X = " + x + " Y = " + y + "<br/>";
+    }
+    */
+
+ html = "<br />Final Value: $" + f + "<br /><br />"
+
+    output.innerHTML = html;
+}
+
+function displayValues()
+{
+        alert("displayValues()");
+   var s = "";
+    
+    s = "Y = " + a + " x<sup>2</sup> + ";
+    s+= b + " x + " + c + "<br/><br/>";
+    
+    for (var i = 0; i <= n; i++)
+    {
+        s += " X = " + x[i] + " Y = " + y[i] + "<br/>";       
+    }
+    
+    output.innerHTML = s;
+}
+
+
+function plotValues()
+{
+    alert("plotValues()");
+ 
+    calculate();
+   chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'plot',
+                type: 'line',
+                marginRight: 130,
+                marginBottom: 25
+            },
+            title: {
+                text: 'Compound Interest Calculator',
+                x: -20 //center
+            },
+            xAxis: {
+                title: {
+                    text: 'Years'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Value'
+                }   
+            }, 
+       
+       plotOptions: {
+                scatter: {
+                    marker: {
+                        radius: 5,
+                        states: {
+                            hover: {
+                                enabled: true,
+                                lineColor: 'rgb(100,100,100)'
+                            }
+                        }
+                    },
+                    states: {
+                        hover: {
+                            marker: {
+                                enabled: false
+                            }
+                        }
+                    }
+                }
+            },
+       
+       series: [{
+                name: 'Y Values',
+                color: 'rgba(223, 83, 83, .5)',
+                data: v
+       }]                
+   })      
+
+}
+
+$('#calculate').click( function() {
+     calculate();
+     displayValues();    
+});
+
+$('#plot').click( function() {
+     calculate();
+     plotValues();   
+});
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+<!-- OLD EMBEDDING
+<iframe width="100%" height="300"
+src="http://jsfiddle.net/mblack101/g6L4b8mt/embedded/"
+allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+-->
+
+<!--
+Compound Interest Calculator<br/><br>
+jsfiddle: <a
+href="http://jsfiddle.net/mblack101/g6L4b8mt/">http://jsfiddle.net/mblack101/g6L4b8mt/</a><br
+/><br />
+Final Value = Principal<sup>(Years)</sup><br/><br/>
+     Principal: <input type="text" id="p" size="5" /><br/>
+     Interest: <input type="text" id="i" size="5" /><br/>
+     Years to compound: <input type="text" id="y" size="5" /><br/>
+<br/><br/>
+<input type="button" value="Submit" id="calculate" />
+<br/><br/>
+</p>
+<p id="output"></p>    
+-->
+
+<p class="footer">Created by Mike Black for COP4813, Fall 2014.</p>
+</body>
+</html>
+

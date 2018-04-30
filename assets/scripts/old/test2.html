@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<p id="demo">Let AJAX change xhttp text.</p>
+
+<button type="button" id="button1" onclick="loadDoc()">Change Content</button>
+
+<script>
+var xhttp = new XMLHttpRequest();
+
+function loadDoc() 
+{
+  if (xhttp.readyState == 4 || xhttp.readyState == 0 ) 
+  {
+    document.getElementById("button1").innerHTML = ("xhttp.readystate = " + xhttp.readyState);
+    xhttp.open("GET", "localhost:8080/connector", true);
+    xhttp.onreadystatechange = handleServerResponse() 
+      xhttp.send(null);
+  }
+}
+
+function handleServerResponse()
+{
+  if (xhttp.readyState == 4 && xhttp.status == 200) 
+  {
+
+    document.getElementById("demo").innerHTML = xhttp.responseText;
+  } else {
+    document.getElementById("demo").innerHTML = ("xhttp.readyState = " + xhttp.readyState + ", xhttp.status = " + xhttp.status);
+    document.getElementById("demo").innerHTML = xhttp.responseText;
+  }
+}
+</script>
+
+</body>
+</html>

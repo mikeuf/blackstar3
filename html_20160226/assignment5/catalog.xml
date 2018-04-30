@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<catalog>
+  <record>
+    <recordNum>1</recordNum>
+    <releaseDate>2012-03-25</releaseDate>
+    <format>EP</format>
+    <length>25</length>
+    <sku>A001-01A12</sku>
+    <recordTitle>Sweatin to the Rennaissance</recordTitle>
+  </record>
+  <record>
+    <recordNum>2</recordNum>
+    <releaseDate>2013-12-17</releaseDate>
+    <format>Double LP</format>
+    <length>95</length>
+    <sku>A002-01A13</sku>
+    <recordTitle>Beethoverns 1.8th</recordTitle>
+  </record>
+  <record>
+    <recordNum>3</recordNum>
+    <releaseDate>2014-08-04</releaseDate>
+    <format>Single</format>
+    <length>7</length>
+    <sku>A003-01A14</sku>
+    <recordTitle>God Save the King/Queen (Two Songs, One Low Price)</recordTitle>
+  </record>
+  <record>
+    <recordNum>4</recordNum>
+    <releaseDate>2014-08-02</releaseDate>
+    <format>LP</format>
+    <length>63</length>
+    <sku>A004-01A14</sku>
+    <recordTitle>Midnight Bowling</recordTitle>
+  </record>
+  <record>
+    <recordNum>893</recordNum>
+    <releaseDate>2025-02-17</releaseDate>
+    <format>LP</format>
+    <length>70</length>
+    <sku>A893-01A25</sku>
+    <recordTitle>Happypants (A Musical)</recordTitle>
+  </record>
+</catalog> 
+

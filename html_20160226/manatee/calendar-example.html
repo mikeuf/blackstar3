@@ -1,0 +1,51 @@
+<?php
+require("hostbaby");
+$my_artist_code = "";
+?>
+<html>
+<head>
+  <title>disgruntledmanatee.com Concert Calendar</title>
+  <style type="text/css">
+  /* Calendar CSS */
+   body { background-color: darkslategray;
+          color: gold;
+          font-family: "trebuchet ms",tahoma,verdana,sans-serif;
+          font-size: 10pt;
+        }
+   a { color: mediumvioletred; text-decoration: none; }
+   a:hover { text-decoration: underline; }
+   .home { color: gold; font-size: 12pt; }
+
+   .calendar { color: black; /* text color */
+               background-color: darkred;
+               width: 450px;
+               padding: 3px;
+               text-align: center;
+             }
+   .calendar_today { background-color: pink; width: 98%; padding: 2px; margin: 4px; text-align: center; }
+   .calendar_event_1 { background-color: snow; width: 98%; padding: 2px; margin: 4px; text-align: center; }
+   .calendar_event_2 { background-color: gainsboro; width: 98%; padding: 2px; margin: 4px; text-align: center; }
+   .calendar_date_table { border-collapse: collapse; }
+
+   .calendar_artist_text { color: beige; text-align: center; font-size: 16pt; font-weight: bold; }
+   .calendar_date_text { color: indianred; font-size: 8pt; text-align: center; padding: 0; }
+   .calendar_event_title_text { color: blue; font-size: 12pt; font-weight: bold; }
+   .calendar_venue_text { color: indigo; font-size: 10pt; }
+   .calendar_notes_text { color: teal; font-size: 10pt; }
+  </style>
+</head>
+<body>
+
+<div align="center">
+
+<h1>disgruntledmanatee.com Concert Calendar</h1>
+
+<?php show_calendar($my_artist_code); ?>
+
+<br>
+<a class="home" href="/">Go Home</a><br>
+
+</div>
+
+</body>
+</html>

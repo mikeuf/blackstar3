@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE catalog [
+<!ELEMENT catalog(record) >
+<!ELEMENT record (recordNum, releaseDate, format, length, sku, recordTitle) >
+<!ELEMENT recordNum (#PCDATA) >
+<!ELEMENT releaseDate (#PCDATA) >
+<!ELEMENT format (#PCDATA) >
+<!ELEMENT length (#PCDATA) >
+<!ELEMENT sku (#PCDATA) >
+<!ELEMENT recordTitle (#PCDATA) >

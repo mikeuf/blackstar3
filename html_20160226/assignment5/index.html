@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>ACME Records Release Catalog</title>
+<link rel="stylesheet" type="text/css"
+href="http://www.michaelpatrickblack.com/assignment5/css/cop4813.css">
+<script type="text/javascript"
+src="http://www.michaelpatrickblack.com/js/sddm.js">
+</script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true">
+</script>
+<script type="text/javascript"
+src="http://www.michaelpatrickblack.com/js/display_kmlmap.js">
+</script>
+  <script>
+function loadXMLDoc(dname)
+{
+  if (window.XMLHttpRequest)
+  {
+    xhttp=new XMLHttpRequest(); // Everything but IE
+  }
+  else
+  {
+    xhttp=new ActiveXObject("Microsoft.XMLHTTP");  // IE Only
+  }
+  xhttp.open("GET",dname,false);   // Open the file
+  try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11
+  xhttp.send("");
+  return xhttp.responseXML;
+}
+function displayResult(fname)
+{
+  xml=loadXMLDoc(fname+".xml");
+  xsl=loadXMLDoc(fname+".xsl");
+  // code for IE new
+  if (window.ActiveXObject || xhttp.responseType == "msxml-document")
+  {
+    ex = xml.transformNode(xsl);
+    document.getElementById("example").innerHTML = ex;
+  }
+
+  // code for IE old
+  if (window.ActiveXObject)
+  {
+    ex=xml.transformNode(xsl);
+    document.getElementById("example").innerHTML=ex;
+  }
+  // code for Mozilla, Firefox, Opera, etc.
+  else if (document.implementation && document.implementation.createDocument)
+  {
+    xsltProcessor=new XSLTProcessor();
+    xsltProcessor.importStylesheet(xsl);
+    resultDocument = xsltProcessor.transformToFragment(xml,document);
+    document.getElementById("example").appendChild(resultDocument);
+  }
+}
+</script>
+</head>
+<body onload="displayResult('catalog')">
+<h1>
+ACME Records Release Catalog
+</h1>
+<!-- BEGIN DROPDOWN MENU STUFF -->
+
+<ul id="sddm">
+<li><a href="http://www.michaelpatrickblack.com" 
+onmouseover="mopen('m1')" 
+onfocus="mopen('m1')" 
+onblur="mclosetime()" 
+onmouseout="mclosetime()">Back</a>
+<div id="m1" 
+onmouseover="mcancelclosetime()" 
+onfocus="mcancelclosetime()" 
+onblur="mclosetime()"
+onmouseout="mclosetime()">
+</div>
+</li>
+</ul>
+<div style="clear:both"></div>
+
+<!-- END DROPDOWN MENU STUFF -->
+
+<div id="example">
+</div>
+<div class="footer">
+<p>XML:<br />
+<a href="http://www.michaelpatrickblack.com/assignment5/xml.txt">
+http://www.michaelpatrickblack.com/assignment5/xml.txt</a>
+</p>
+<p>XSLT:<br />
+<a href="http://www.michaelpatrickblack.com/assignment5/catalog.xsl">
+http://www.michaelpatrickblack.com/assignment5/catalog.xsl</a>
+</p>
+<p>XSD:<br />
+<a href="http://www.michaelpatrickblack.com/assignment5/catalog.xsd">
+http://www.michaelpatrickblack.com/assignment5/catalog.xsd</a>
+</p>
+<p>DTD:<br />
+<a href="http://www.michaelpatrickblack.com/assignment5/catalog.dtd">
+http://www.michaelpatrickblack.com/assignment5/catalog.dtd</a>
+</p>
+</div>
+</body>
+</html> 
+

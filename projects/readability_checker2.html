@@ -1,0 +1,22 @@
+<div>
+
+  New name: <input type="textarea" data-ng-model="newSomething.name" /> {{ newSomething.name }}
+  <br />
+  New city: <input type="textarea" data-ng-model="newSomething.city" /> {{ newSomething.city }}
+  <br />
+  <button data-ng-click="addSomething()">Add</button>
+  Search: <input type="text" data-ng-model="bar" /> {{ bar }}
+  <br />
+  <ul>
+    <li data-ng-repeat="foo in names | filter:bar | orderBy:'city'"> 
+    {{ foo.name + " " + foo.city }}</li>
+  </ul>
+
+  <div ng-controller="CkeditorCtrl">
+    <div ckeditor="options" ng-model="content" ready="onReady()"></div>
+  </div>
+
+   <textarea name="editor1" id="editor1" rows="10" cols="80">
+                     This is my textarea to be replaced with CKEditor.
+                                 </textarea>
+</div>

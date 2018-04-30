@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"> 
+<html data-ng-app="demoApp">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+<script src="../assets/scripts/angular-ckeditor/angular-ckeditor.js"></script>
+<script src="//cdn.ckeditor.com/4.5.8/full/ckeditor.js"></script>
+
+<script>
+angular.module('controllers.ckeditor', ['ckeditor']).controller('CkeditorCtrl', ['$scope', function ($scope) 
+{
+// Editor options.
+$scope.options = {
+language: 'en',
+allowedContent: true,
+entities: false
+};
+
+// Called when the editor is completely ready.
+$scope.onReady = function () {
+// ...
+};
+}]);
+
+var demoApp = angular.module('demoApp',['ngRoute']);
+
+demoApp.config(function ($routeProvider) {
+
+    $routeProvider.when('/', {
+controller: 'SimpleController',
+templateUrl: 'readability_checker2.html'
+});
+
+    });
+
+demoApp.controller('SimpleController', function ($scope) 
+    {
+    $scope.names = [
+    { name: 'a1', city: 'Tokyo' },
+    { name: 'x2', city: 'Dublin' },
+    { name: 'r3', city: 'Paris' },
+    { name: 'e4', city: 'Orlando'}
+    ];
+
+
+    $scope.addSomething = function()
+    {
+    $scope.names.push(
+      { 
+name: $scope.newSomething.name,
+city: $scope.newSomething.city 
+});
+    };
+    });
+
+</script>
+</head>
+<body>
+<script>
+console.log("CAN YOU SEE THIS?");
+</script>
+<div data-ng-view></div>
+
+ <div ng-controller="CkeditorCtrl">
+       <div ckeditor="options" ng-model="content" ready="onReady()"></div>
+         </div>
+</body>
+</html>
+

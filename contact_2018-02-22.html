@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="assets/scripts/contactFormSubmit.js"></script>
+<head>
+<!-- meta tags -->
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+
+<!-- bootstrap CSS --> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- google fonts -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,600italic,800,800italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+
+<!-- adobe fonts-->
+<script src="https://use.typekit.net/dam5tia.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<!-- mail script-->
+<!-- <script type="text/javascript" src="http://www.mikepblack.com/assets/scripts/contact-form.js"></script> -->
+</head>
+
+
+<!-- begin body -->
+<body>
+
+<div class='container'>
+<!-- begin navbar -->
+<header class='navbar navbar-default navbar-fixed-top'>
+        <nav class='container-fluid' role='navigation'>
+                <div class='navbar-header'>
+                        <a href='http://mikepblack.com' class='navbar-brand'><p class='brim2'>Mike Black</p></a>
+     
+                        <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='.navbar-collapse'>
+                                <span class='sr-only'>Toggle navigation</span>
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                        </button>
+                </div>
+                
+                <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+
+                        <li><a href="about.html"><i class="fa fa-smile-o"></i> About me</a></li>
+                        <li><a href="https://www.linkedin.com/in/mike-b-55323aa/"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                        <li class='dropdown'>
+                        <a href='/about' data-target='#' class='dropdown-toggle' data-toggle='dropdown'><i class="fa fa-download"></i> Resume<span class='caret'></span></a>
+                        <ul class='dropdown-menu' role='menu'>
+                                <li><a href='mike_black_resume.pdf'><i class="fa fa-file-pdf-o"></i> PDF</a></li>
+                                <li><a href='mike_black_resume.docx'><i class="fa fa-file-word-o"></i> DOCX</a></li>
+                        </ul>
+                        <li><a href="contact.html""><i class="fa fa-envelope-o"></i> Contact</a></li>
+
+                </ul>
+        </nav>
+<!-- end navbar -->
+</header>
+
+<!-- begin latest post -->
+<div class="row"> <!-- begin row 1 -->
+	<!-- begin col 1,1 -->
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<div class='col-md-2'></div>
+		<div class='col-xs-12 col-md-8'>
+		<h1 class='brim2-dark text-center'>Contact Form</h1>
+		<p>&nbsp;</p>
+		<p class="text-justify">
+
+<div id="contact-form">
+<form name="form1" method="post" action="javascript:contactFormSubmit();" autocomplete='on'>
+<label>Name: <br /><input type="text" id="Name" size='40' autocomplete='name' autofocus></label><br /><br />
+<label>Email: <br /><input type="email" id="Email" size='40' autocomplete='email'></label><br /><br />
+<label>Message:<br /><textarea id="Message" class="message" cols="80" rows="10" maxlength='1000'></textarea></label><br /><br />
+<br />
+<div class="g-recaptcha" data-sitekey="6LePg0cUAAAAAI8z5HioIt1LcmEgGAYf0_H7xlWW"></div>
+<br /><br />
+<input type="submit" value="Submit" />
+</form>
+</div>
+<div id='form-status'></div>
+
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+	</div><!-- end col 1,1 -->
+	<div class='col-md-2'></div>
+</div> <!-- end row 1 -->
+<!-- end about me -->
+
+	<!-- jQuery first, then Bootstrap JS. 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+-->
+</div>
+
+	</body>
+	</html>
