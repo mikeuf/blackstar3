@@ -84,17 +84,17 @@ p .flower {
 }
 
 ul li {
-line-height: 1.5em;
+  line-height: 1.5em;
 }
 
 /*
 p:before {
-  content: '';
-  width: 15rem;
-  display: block;
-  overflow: hidden;
+content: '';
+width: 15rem;
+display: block;
+overflow: hidden;
 }
-*/
+ */
 
 textarea, input[type=text], [type=email] {
   border: 1px solid #555555;
@@ -162,12 +162,12 @@ i[class^='fa fa'] {
 }
 
 #about {
-font-family: 'Lora', 'Georgia', serif;
+  font-family: 'Lora', 'Georgia', serif;
 }
 
 
 #projects {
-font-family: 'Lora', 'Georgia', serif;
+  font-family: 'Lora', 'Georgia', serif;
 }
 
 
@@ -235,347 +235,347 @@ font-family: 'Lora', 'Georgia', serif;
   color: #ffffff;
 }
 
-  .header-wrapper {
-    background-color: #ffffff;
-    border-bottom: 1px solid #cccccc;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 1;
-  }   
+.header-wrapper {
+  background-color: #ffffff;
+  border-bottom: 1px solid #cccccc;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
+}   
 
-  header {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0.5rem 0 0.25em 0;
-  }   
+header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.5rem 0 0.25em 0;
+}   
 
-  header a { 
-    text-decoration: none;
-    font-weight: normal;
-    color: #555555;
-    float: none;
-  }   
+header a { 
+  text-decoration: none;
+  font-weight: normal;
+  color: #555555;
+  float: none;
+}   
 
-  .fa.fa-bars {
-    font-size: 2.5rem;
+.fa.fa-bars {
+  font-size: 2.5rem;
+}
+
+nav {
+  display: none;
+  padding: 0 0 0 6%;
+}
+
+header ul {
+  list-style-type: none;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  clear: both;
+  display: inline;
+  float: left;
+}   
+header ul li {
+  text-align: center; 
+  clear: both;
+  display: block;
+  float: left;
+  padding: 0.5rem 0 0.5rem 0;
+  line-height: 1em;
+}
+header ul li:hover {
+  text-decoration: underline;
+}
+header i {
+  padding: 0 0.25rem 0 0;
+}
+
+#logo {
+  padding-top: 0.15em;
+
+}
+
+nav a {
+  font-size: 1.25em;
+}
+
+.btn-break {
+  padding: 0;
+  line-height: 0;
+  display: none;
+}
+
+#hamburger {
+  display: inline; 
+  float: left;
+  padding: 0 1rem 0 6%;
+} 
+
+.social-media-button {
+  text-decoration: none;
+  color: #555555;
+
+}
+
+main {
+  max-width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #FAFAFA;
+  font-family: 'Lato', sans-serif;
+  color: #555555;
+}
+
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #cccccc;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+  font-family: 'Lato', sans-serif;
+  color: #555555;
+}
+
+#footer-content {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 6%;
+}
+
+footer p {
+  padding: 0.25em;
+}
+
+#welcome {
+  max-width: 100%;
+  height: 100vh;
+  color: #ffffff;
+  background-image: url('../img/hipster-bsod.jpg');
+  background-color: #B0C4DE;
+  background-size: cover;
+}
+
+article {
+  margin: 5em auto;
+}
+
+article a {
+  text-decoration: underline;
+}
+
+.post-figure {
+  padding: 0.5rem 2em 0 6%;
+}
+
+figcaption {
+  font-weight: bold;
+  text-align: center;
+}
+
+
+#welcome h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: black;
+  font-size: 4rem;
+  margin: 0 auto;
+  padding: 15% 0 0 0;
+  text-align: center;
+  max-width: 400px:
+}
+
+#welcome p {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-size: 1.25em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  max-width: 400px:
+}
+
+.post-centered {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.project-wrapper {
+  display: block;
+  margin: 10% auto;
+}
+
+.project-element {
+  max-width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  margin: 0 0 2em 0;
+}
+
+.project-youtube {
+  max-width: 100%;
+  border: 1px solid #cccccc;
+  margin: 1em 2em 2em 6%;
+}
+
+.project-list {
+  font-family: 'Lora', 'Georgia', serif;
+  padding: 0 6% 2rem 6%;
+}
+
+.project-img {
+  max-width: 100%;
+  border: 1px solid #cccccc;
+  margin: 1em 2em 2em 6%;
+  float: left;
+}
+
+.project-element h2 {
+  padding-top: 2em;
+}
+
+#project-btn {
+  display: block;
+  margin: 0 auto 1em auto;
+}
+
+.project-element p {
+  padding-top: 1em;
+}
+
+#resume-wrapper {
+  background-color: #FFFFFF;
+  border: 1px solid #cccccc;
+  font-family: 'Lora', 'Georgia', serif;
+  width: 100%;
+  padding-bottom: 3em;
+}
+
+#resume-wrapper p {
+  padding: 0;
+}
+
+#resume-wrapper h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #5a8fcc;
+  padding: 0;
+}
+
+#resume-contact {
+  color: #5a8fcc;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+
+#resume-contact a {
+  color: #5a8fcc;
+  text-decoration: none;
+}
+
+#resume-contact a:hover {
+  text-decoration: underline;
+
+}
+#resume-wrapper h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5a8fcc;
+  padding: 2em 0 0.5em 0;
+}
+
+#resume-deck {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: #5a8fcc;
+}
+
+#resume-header {
+  padding: 0 6% 0 6%;
+}
+
+#resume-body {
+  column-width: 300px;
+  column-gap: 8ch;
+  column-count: 2;
+  padding: 0 6% 0 6%;
+}
+
+#resume-body ul {
+}
+
+#resume-body ul li {
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+#resume-skills {
+  text-align: justify;
+  text-justify: distribute;
+}
+
+#resume-button-wrapper {
+  text-align: left;
+  padding: 0 0 1em 6%;
+}
+
+
+#contact p {
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 0.5em;
+}
+
+#contact-form {
+  font-size: 1.25rem;
+  padding: 0 6% 0 6%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+@media screen and (min-width: 740px) {
+
+  #hamburger {
+    display: none; 
+  } 
+
+  #logo {
+    padding: 0.15em 0 0 6%;
   }
 
   nav {
-    display: none;
-    padding: 0 0 0 6%;
+    display: inline !important;
+    padding: 0 6% 0 0;
   }
-
   header ul {
-    list-style-type: none;
-    font-size: 1rem;
-    font-family: 'Lato', sans-serif;
-    clear: both;
     display: inline;
-    float: left;
-  }   
+    float: right;
+    padding-right: 6%;
+  }
   header ul li {
-    text-align: center; 
-    clear: both;
-    display: block;
-    float: left;
-    padding: 0.5rem 0 0.5rem 0;
-    line-height: 1em;
-  }
-  header ul li:hover {
-    text-decoration: underline;
-  }
-  header i {
-    padding: 0 0.25rem 0 0;
-  }
-
-  #logo {
-    padding-top: 0.15em;
-
+    clear: none;
+    display: inline;
+    float: left; /* prevents reordering of the nav buttons */
+    padding: 0 0 0 1.5rem;
   }
 
   nav a {
-    font-size: 1.25em;
+    font-size: 1em;
   }
-
   .btn-break {
-    padding: 0;
-    line-height: 0;
-    display: none;
-  }
-
-  #hamburger {
-    display: inline; 
-    float: left;
-    padding: 0 1rem 0 6%;
-  } 
-
-  .social-media-button {
-    text-decoration: none;
-    color: #555555;
-
-  }
-
-  main {
-    max-width: 960px;
-    height: 100%;
-    margin: 0 auto;
-    background-color: #FAFAFA;
-    font-family: 'Lato', sans-serif;
-    color: #555555;
-  }
-
-  footer {
-    background-color: #ffffff;
-    border-top: 1px solid #cccccc;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-             bottom: 0;
-    font-family: 'Lato', sans-serif;
-    color: #555555;
-  }
-
-  #footer-content {
-    width: 960px;
-    margin: 0 auto;
-    padding: 0 6%;
-  }
-
-  footer p {
-    padding: 0.25em;
-  }
-
-  #welcome {
-    max-width: 100%;
-    height: 100vh;
-    color: #ffffff;
-    background-image: url('../img/hipster-bsod.jpg');
-    background-color: #B0C4DE;
-    background-size: cover;
-  }
-
-  article {
-    margin: 5em auto;
-  }
-
-  article a {
-    text-decoration: underline;
-  }
-
-  .post-figure {
-    padding: 0.5rem 2em 0 6%;
-  }
-
-  figcaption {
-    font-weight: bold;
-    text-align: center;
-  }
-
-
-  #welcome h1 {
-    font-family: 'Lato', sans-serif;
-    font-weight: black;
-    font-size: 4rem;
-    margin: 0 auto;
-    padding: 15% 0 0 0;
-    text-align: center;
-    max-width: 400px:
-  }
-
-  #welcome p {
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    font-size: 1.25em;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    max-width: 400px:
-  }
-
-  .post-centered {
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-  }
-
-  .project-wrapper {
     display: block;
-    margin: 10% auto;
   }
-
-  .project-element {
-    max-width: 100%;
-    background-color: #ffffff;
-    overflow: hidden;
-    border: 1px solid #cccccc;
-    margin: 0 0 2em 0;
-  }
-
-  .project-youtube {
-    max-width: 100%;
-    border: 1px solid #cccccc;
-    margin: 1em 2em 2em 6%;
-  }
-
-  .project-list {
-    font-family: 'Lora', 'Georgia', serif;
-    padding: 0 6% 2rem 6%;
-  }
-
-  .project-img {
-    max-width: 100%;
-    border: 1px solid #cccccc;
-    margin: 1em 2em 2em 6%;
-    float: left;
-  }
-
-  .project-element h2 {
-    padding-top: 2em;
-  }
-
-  #project-btn {
-    display: block;
-    margin: 0 auto 1em auto;
-  }
-
-  .project-element p {
-    padding-top: 1em;
-  }
-
-  #resume-wrapper {
-    background-color: #FFFFFF;
-    border: 1px solid #cccccc;
-    font-family: 'Lora', 'Georgia', serif;
-    width: 100%;
-    padding-bottom: 3em;
-  }
-
-  #resume-wrapper p {
-    padding: 0;
-  }
-
-  #resume-wrapper h3 {
-    font-family: 'Lato', sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #5a8fcc;
-    padding: 0;
-  }
-
-  #resume-contact {
-    color: #5a8fcc;
-    font-size: 1rem;
-    font-family: 'Lato', sans-serif;
-  }
-
-  #resume-contact a {
-    color: #5a8fcc;
-    text-decoration: none;
-  }
-
-  #resume-contact a:hover {
-    text-decoration: underline;
-
-  }
-  #resume-wrapper h4 {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #5a8fcc;
-    padding: 2em 0 0.5em 0;
-  }
-
-  #resume-deck {
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
-    color: #5a8fcc;
-  }
-
-  #resume-header {
-    padding: 0 6% 0 6%;
-  }
-
-  #resume-body {
-    column-width: 300px;
-    column-gap: 8ch;
-    column-count: 2;
-    padding: 0 6% 0 6%;
-  }
-
-  #resume-body ul {
-  }
-
-  #resume-body ul li {
-    padding: 0.5rem 0 0.5rem 0;
-  }
-
-  #resume-skills {
-    text-align: justify;
-    text-justify: distribute;
-  }
-
-  #resume-button-wrapper {
-    text-align: left;
-    padding: 0 0 1em 6%;
-  }
-
-
-  #contact p {
-    font-family: 'Lato', sans-serif;
-    padding-bottom: 0.5em;
-  }
-
-  #contact-form {
+  i[class^='fa fa'] {
     font-size: 1.25rem;
-    padding: 0 6% 0 6%;
-  }
-
-  .left {
-    float: left;
-  }
-
-  .right {
-    float: right;
-  }
-
-  @media screen and (min-width: 740px) {
-
-    #hamburger {
-      display: none; 
-    } 
-
-    #logo {
-      padding: 0.15em 0 0 6%;
-    }
-
-    nav {
-      display: inline !important;
-      padding: 0 6% 0 0;
-    }
-    header ul {
-      display: inline;
-      float: right;
-      padding-right: 6%;
-    }
-    header ul li {
-      clear: none;
-      display: inline;
-      float: left; /* prevents reordering of the nav buttons */
-      padding: 0 0 0 1.5rem;
-    }
-
-    nav a {
-      font-size: 1em;
-    }
-    .btn-break {
-      display: block;
-    }
-    i[class^='fa fa'] {
-      font-size: 1.25rem;
-      padding: 0;
-    } 
+    padding: 0;
+  } 
 
 
   #welcome h1 {
@@ -600,17 +600,17 @@ font-family: 'Lora', 'Georgia', serif;
   }
 
 
-    #resume-button-wrapper {
-      text-align: right;
-      padding: 0 6% 0 0;
-    }
-
-    #resume-education {
-      list-style-type: none;
-    }
-
-    article {
-      text-align: justified;
-    }
+  #resume-button-wrapper {
+    text-align: right;
+    padding: 0 6% 0 0;
   }
+
+  #resume-education {
+    list-style-type: none;
+  }
+
+  article {
+    text-align: justified;
+  }
+}
 
