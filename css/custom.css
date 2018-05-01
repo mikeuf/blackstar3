@@ -6,6 +6,60 @@
   font-size: 100%;
 }
 
+
+@font-face {
+  font-family: 'Lora';
+  src: url('assets/fonts/lora/lora-regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lora';
+  src: url('assets/fonts/lora/lora-italic.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lora';
+  src: url('assets/fonts/lora/lora-bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Lora';
+  src: url('assets/fonts/lora/lora-bolditalic.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('assets/fonts/lato/lato-regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('assets/fonts/lato/lato-italic.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('assets/fonts/lato/lato-bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('assets/fonts/lato/lato-bolditalic.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('assets/fonts/lato/lato-black.ttf');
+  font-weight: black;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('assets/fonts/lato/lato-blackitalic.ttf');
+  font-weight: black;
+}
+
+
+
 html {
   height: 100%;
 }
@@ -21,12 +75,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 6% 0 6%;
 }
 
-
 p {
-  font-family: 'Lora';
+  font-family: 'Lora', 'Georgia', serif;
   line-height: 1.5em;
   padding: 0 6% 2rem 6%;
-
 }
 
 p .flower {
@@ -39,7 +91,7 @@ line-height: 1.5em;
 
 
 p:before {
-  content: "";
+  content: '';
   width: 15rem;
   display: block;
   overflow: hidden;
@@ -54,34 +106,34 @@ textarea, input[type=text], [type=email] {
 }
 
 h1 {
-  font-family: "Lato";
-  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
   font-size: 3rem;
   padding-bottom: 0.5em;
 }
 
 h2 {
-  font-family: "Lato";
-  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
   font-size: 1.5rem;
 }
 
 
 h3 {
-  font-family: "Lato";
-  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
   font-size: 1.25rem;
 }
 
 h4 {
-  font-family: "Lato";
-  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
   font-size: 1.5rem;
 }
 
 h5 {
-  font-family: "Lato";
-  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
   font-size: 1.25rem;
 }
 
@@ -92,12 +144,12 @@ img {
 a {
   text-decoration: none;
   color: #555555;
-  font-weight: 500;
+  font-weight: bold;
   color: #5a8fcc;
   font-weight: bold;
 }
 
-i[class^="fa fa"] {
+i[class^='fa fa'] {
   font-size: 1.5rem;
   padding: 0;
 } 
@@ -153,7 +205,7 @@ i[class^="fa fa"] {
   color: #ffffff;
   border: 0;
   background-color: #5c51ed;
-  font-weight: 400;
+  font-weight: bold;
   letter-spacing: 0.1em;
   padding: 10px 20px 10px 20px;
   display: block;
@@ -192,7 +244,7 @@ i[class^="fa fa"] {
 
   header a { 
     text-decoration: none;
-    font-weight: 500;
+    font-weight: normal;
     color: #555555;
     float: none;
   }   
@@ -209,7 +261,7 @@ i[class^="fa fa"] {
   header ul {
     list-style-type: none;
     font-size: 1rem;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     clear: both;
     display: inline;
     float: left;
@@ -261,8 +313,7 @@ i[class^="fa fa"] {
     height: 100%;
     margin: 0 auto;
     background-color: #FAFAFA;
-    font-family: 'Lato';
-    font-weight: 400;
+    font-family: 'Lato', sans-serif;
     color: #555555;
   }
 
@@ -293,8 +344,8 @@ i[class^="fa fa"] {
 
 
   #welcome h1 {
-    font-family: "Lato";
-    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    font-weight: black;
     font-size: 4rem;
     margin: 0 auto;
     padding: 15% 0 0 0;
@@ -307,8 +358,8 @@ i[class^="fa fa"] {
     margin-left: auto;
     text-align: center;
     font-size: 1.25em;
-    font-family: 'Lato';
-    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
     max-width: 400px:
   }
 
@@ -338,7 +389,7 @@ i[class^="fa fa"] {
   }
 
   .project-list {
-    font-family: 'Lora';
+    font-family: 'Lora', 'Georgia', serif;
     padding: 0 6% 2rem 6%;
   }
 
@@ -365,7 +416,7 @@ i[class^="fa fa"] {
   #resume-wrapper {
     background-color: #FFFFFF;
     border: 1px solid #cccccc;
-    font-family: 'Lora';
+    font-family: 'Lora', 'Georgia', serif;
     width: 100%;
     padding-bottom: 3em;
   }
@@ -375,9 +426,9 @@ i[class^="fa fa"] {
   }
 
   #resume-wrapper h3 {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: bold;
     color: #5a8fcc;
     padding: 0;
   }
@@ -385,8 +436,7 @@ i[class^="fa fa"] {
   #resume-contact {
     color: #5a8fcc;
     font-size: 1rem;
-    font-family: 'Lato';
-    font-weight: 300;
+    font-family: 'Lato', sans-serif;
   }
 
   #resume-contact a {
@@ -399,15 +449,15 @@ i[class^="fa fa"] {
 
   }
   #resume-wrapper h4 {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: bold;
     color: #5a8fcc;
     padding: 2em 0 0.5em 0;
   }
 
   #resume-deck {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-size: 1rem;
     color: #5a8fcc;
   }
@@ -442,7 +492,7 @@ i[class^="fa fa"] {
 
 
   #contact p {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     padding-bottom: 0.5em;
   }
 
@@ -491,15 +541,15 @@ i[class^="fa fa"] {
     .btn-break {
       display: block;
     }
-    i[class^="fa fa"] {
+    i[class^='fa fa'] {
       font-size: 1.25rem;
       padding: 0;
     } 
 
 
   #welcome h1 {
-    font-family: "Lato";
-    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    font-weight: black;
     font-size: 7rem;
     max-width: 650px;
     margin: 0 auto;
@@ -513,8 +563,8 @@ i[class^="fa fa"] {
     text-align: center;
     max-width: 650px;
     font-size: 2em;
-    font-family: 'Lato';
-    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
     line-height: 1.25em;
   }
 
