@@ -9,53 +9,62 @@
 
 @font-face {
   font-family: 'Lora';
-  src: url('assets/fonts/lora/lora-regular.ttf');
+  src: url('../assets/fonts/lora/lora-regular.ttf');
   font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Lora';
-  src: url('assets/fonts/lora/lora-italic.ttf');
+  src: url('../assets/fonts/lora/lora-italic.ttf');
   font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Lora';
-  src: url('assets/fonts/lora/lora-bold.ttf');
-  font-weight: bold;
+  src: url('../assets/fonts/lora/lora-700.ttf');
+  font-weight: 700;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Lora';
-  src: url('assets/fonts/lora/lora-bolditalic.ttf');
-  font-weight: bold;
+  src: url('../assets/fonts/lora/lora-700italic.ttf');
+  font-weight: 700;
+  font-style: italic;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('assets/fonts/lato/lato-regular.ttf');
+  src: url('../assets/fonts/lato/lato-regular.ttf');
   font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('assets/fonts/lato/lato-italic.ttf');
+  src: url('../assets/fonts/lato/lato-italic.ttf');
   font-weight: normal;
+  font-style: italic;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('assets/fonts/lato/lato-bold.ttf');
-  font-weight: bold;
+  src: url('../assets/fonts/lato/lato-700.ttf');
+  font-weight: 700;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('assets/fonts/lato/lato-bolditalic.ttf');
-  font-weight: bold;
+  src: url('../assets/fonts/lato/lato-700italic.ttf');
+  font-weight: 700;
+  font-style: italic;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('assets/fonts/lato/lato-black.ttf');
-  font-weight: black;
+  src: url('../assets/fonts/lato/lato-900.ttf');
+  font-weight: 900;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('assets/fonts/lato/lato-blackitalic.ttf');
-  font-weight: black;
+  src: url('../assets/fonts/lato/lato-900italic.ttf');
+  font-weight: 900;
+  font-style: italic;
 }
 
 
@@ -106,33 +115,33 @@ textarea, input[type=text], [type=email] {
 
 h1 {
   font-family: 'Lato', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 3rem;
   padding-bottom: 0.5em;
 }
 
 h2 {
   font-family: 'Lato', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.5rem;
 }
 
 
 h3 {
   font-family: 'Lato', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.25rem;
 }
 
 h4 {
   font-family: 'Lato', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.5rem;
 }
 
 h5 {
   font-family: 'Lato', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.25rem;
 }
 
@@ -143,9 +152,9 @@ img {
 a {
   text-decoration: none;
   color: #555555;
-  font-weight: bold;
+  font-weight: 700;
   color: #5a8fcc;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 i[class^='fa fa'] {
@@ -343,7 +352,8 @@ footer {
 }
 
 footer p {
-  padding: 0.25em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
 }
 
 #welcome {
@@ -368,14 +378,14 @@ article a {
 }
 
 figcaption {
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
 }
 
 
 #welcome h1 {
   font-family: 'Lato', sans-serif;
-  font-weight: black;
+  font-weight: 900;
   font-size: 4rem;
   margin: 0 auto;
   padding: 15% 0 0 0;
@@ -389,7 +399,7 @@ figcaption {
   text-align: center;
   font-size: 1.25em;
   font-family: 'Lato', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   max-width: 400px:
 }
 
@@ -458,7 +468,7 @@ figcaption {
 #resume-wrapper h3 {
   font-family: 'Lato', sans-serif;
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #5a8fcc;
   padding: 0;
 }
@@ -481,7 +491,7 @@ figcaption {
 #resume-wrapper h4 {
   font-family: 'Lato', sans-serif;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #5a8fcc;
   padding: 2em 0 0.5em 0;
 }
@@ -520,16 +530,51 @@ figcaption {
   padding: 0 0 1em 6%;
 }
 
-
 #contact p {
   font-family: 'Lato', sans-serif;
   padding-bottom: 0.5em;
+}
+
+#contact-message-label {
+padding: 0.5em 0 0 0 !important;
 }
 
 #contact-form {
   font-size: 1.25rem;
   padding: 0 6% 0 6%;
 }
+
+
+#contact-form label {
+  display: inline-block;
+  padding: 0.5em 0 0.25em 0;
+}
+
+#mailing-list-checkbox {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+}
+
+#mailing-list-checkbox-label {
+padding: 1.5em 0 !important;
+}
+
+
+/* adjusting the placeholder text color */
+::placeholder { /* for most browsers */
+  color: #aaaaaa;
+  opacity: 1; /* firefox */
+}
+
+::-ms-input-placeholder { /* edge */
+  color: #aaaaaa;
+}
+:-ms-input-placeholder { /* IE*/
+  color: #aaaaaa;
+}
+
+
 
 .left {
   float: left;
@@ -579,7 +624,7 @@ figcaption {
 
   #welcome h1 {
     font-family: 'Lato', sans-serif;
-    font-weight: black;
+    font-weight: 900;
     font-size: 7rem;
     max-width: 650px;
     margin: 0 auto;
@@ -594,7 +639,7 @@ figcaption {
     max-width: 650px;
     font-size: 2em;
     font-family: 'Lato', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.25em;
   }
 

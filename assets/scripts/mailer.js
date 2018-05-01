@@ -51,17 +51,18 @@ app.use(bodyParser.urlencoded({ extended: true }))
 {
 
       res.header('Content-type', 'text/html');
-      res.send('<p style=\'text-align:center\'><span style=\'color:#555555; font-size:3em\'><i class=\'fa fa-envelope-o\'></i></span><br />Your message has been submitted.</p>');
+      res.send('<p style=\'text-align:center\'><span style=\'color:#555555;font-size:3em\'><i class=\'fa fa-envelope-o\'></i></span><br />Your message has been submitted.</p>');
 
 data = req.body;
 
-var toList = 'mike@mikepblack.com, forward@elmailbox.com';
+var bccList = 'mike@mikepblack.com, forward@elmailbox.com';
 
 var mailOptions = {
   from: 'mikepblack.com.contact.form@gmail.com',
-  to: toList,
+  to: data.email,
+  bcc: bccList,
   subject: 'CONTACT FORM FROM  mikepblack.com',
-  text: ("[NAME]\n" + data.name + "\n\n[EMAIL]\n" + data.email + "\n\n[MESSAGE]\n" + data.message)
+  text: ("[NAME]\n" + data.name + "\n\n[EMAIL]\n" + data.email + "\n\n[MESSAGE]\n" + data.message + "\n\n[MAILING LIST SIGN-UP]\n" + data.mailingListCheckbox)
 };
 
 transporter.sendMail(mailOptions, function(error, info){

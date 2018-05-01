@@ -19,14 +19,19 @@
       <p><a class="social-media-button" href="https://www.linkedin.com/in/mblack101/" target="_blank"><i class="fa fa-linkedin"></i></a>
       <a class="social-media-button" href="https://twitter.com/MikePBlack" target="_blank">&nbsp;&nbsp;<i class="fa fa-twitter"></i></a></p>
       <h2>Contact form</h2>
+      <!-- begin contact form -->
       <section id="contact-form">
         <form name="form1" method="post" action="javascript:contactFormSubmit();" autocomplete="on">
-          <label>Name: <br /><input type="text" id="Name" size="60" autocomplete="name" autofocus /></label><br /><br />
-          <label>Email: <br /><input type="email" id="Email" size="60" autocomplete="email" /></label><br /><br />
-          <label>Message:<br /><textarea id="Message" class="message" cols="80" rows="10" maxlength="1000"></textarea></label><br /><br />
+          <label for="form-name">Name:</label><input type="text" name="form-name" id="form-name" placeholder="Your name" size="60" autocomplete="name" autofocus /><br />
+          <label for="form-email">Email:</label><input type="email" name="form-email" id="form-email" placeholder="Email address" size="60" autocomplete="email" /><br />
+          <p id="contact-message-label">Message:</p><textarea name="form-message" id="form-message" placeholder="Your message" class="message" cols="80" rows="10" maxlength="1000"></textarea><br />
+                            <input type="checkbox" name="mailing-list-checkbox" id="mailing-list-checkbox" value="yes" />
+<label id="mailing-list-checkbox-label" for="mailing-list-checkbox">&nbsp;Add me to the mailing list</label>
+
           <br />
           <div class="g-recaptcha" data-sitekey="6LePg0cUAAAAAI8z5HioIt1LcmEgGAYf0_H7xlWW"></div>
           <br /><br />
+          <!-- intentionally omitting a reset/clear button since they usually just cause confusion -->
           <input class="btn" type="submit" value="Submit" />
         </form>
       </section>
