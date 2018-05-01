@@ -335,6 +335,11 @@ font-family: 'Lora', 'Georgia', serif;
              bottom: 0;
     font-family: 'Lato', sans-serif;
     color: #555555;
+  }
+
+  #footer-content {
+    width: 960px;
+    margin: 0 auto;
     padding: 0 6%;
   }
 
