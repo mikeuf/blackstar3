@@ -12,11 +12,16 @@ function contactFormSubmit() {
     var formMessage = document.getElementById("form-message").value; 
     var formMailingListCheckbox;
 
+    /*
    if(document.getElementById("mailing-list-checkbox").checked) {
     formMailingListCheckbox = "Yes"; 
    } else {
     formMailingListCheckbox = "No"; 
    }
+   */
+    formMailingListCheckbox = "No"; 
+
+
 
 
 
@@ -34,7 +39,7 @@ function contactFormSubmit() {
     }
     else 
     {
-      document.getElementById('form-status').innerHTML = "<p><br />Sorry. The form was unable to establish contact with the server. Try again later.<br /> XHR readystate: " + this.readyState + "<br />HTTP status: " + this.status + "<br />If this error continues, you can also contact me via email at mike@mikepblack.com.</p>";
+      document.getElementById('form-status').innerHTML = "<p><br />Sorry. The form was unable to establish contact with the server. Try again later.<br /> XHR readystate: " + this.readyState + "<br />HTTP status: " + this.status + "<br /><b>Note:</b> The process that handles the form occasionally terminates, causing this error. You can also contact me via email at mike@mikepblack.com.</p>";
     } 
 
 // 3. xhr.onReadStateChange

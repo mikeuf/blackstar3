@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  background-color: #ea4335;
+}
+
+header {
+  height: 6.5rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #ffffff;
+  text-align: right;
+}
+
+main {
+  padding-left: 10%;
+  padding-right: 10%;
+  background-image: url('../images/background-desktop.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+footer {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #ed8c51;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+}
+
+article {
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+aside {
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+#logo {
+  max-width: 150px; 
+  width: 100%;
+  display: inline;
+  float: left;
+  padding: 2%;
+}
+
+#btn-hamburger {
+  display: inline;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ea4335;
+}
+
+#header-desktop-nav {
+  display: none;
+}
+
+#header-mobile-nav {
+  display: none;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 500;
+  padding: 2%;
+}
+
+
+#tagline {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+figure {
+  padding: 2%;
+  width: 100%;
+  max-width: 100px;
+}
+
+p {
+  padding: 2%;
+}
+
+#accent-gold {
+  color: #fbbc05;
+}
+
+#btn-see-apps {
+  display: block;
+  margin: auto;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ea4335;
+  background-color: #fbbc05;
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+}
+
+/***** MEDIA QUERY 700PX+ *****/
+@media (min-width: 700px) {
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  #header-mobile-nav {
+    display: none;
+  }
+
+  #header-desktop-nav {
+    padding: 2%;
+    display: inline;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  #header-desktop-nav ul li {
+    display: inline;
+    margin: 2%;
+  }
+
+  #header-desktop-nav ul li a {
+    color: #ea4335;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  #btn-hamburger {
+    display: none;
+  }
+
+}
+
+
