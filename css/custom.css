@@ -69,11 +69,11 @@
 
 
 html {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
   font-size: 18px;
   color: #555555;
   background-color: #FAFAFA;
@@ -219,23 +219,24 @@ i[class^='fa fa'] {
   border: 2px solid #7a872e;
 }
 
-#btn-view-my-resume {
+#btn-view-my-projects {
   color: #ffffff;
+  font-size: 1.25em;
   border: 0;
   background-color: #5c51ed;
   letter-spacing: 0.1em;
-  padding: 10px 20px 10px 20px;
+  padding: 15px 25px 15px 25px;
   display: block;
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
   box-shadow: 1px 1px 3px #000000;
   -webkit-appearance: none; /* disables iOS button styling */
 }
 
-#btn-view-my-resume:hover {
+#btn-view-my-projects:hover {
   color: #ffffff;
   background-color: #ed8c51;
-  padding: 10px 20px 10px 20px;
+  padding: 15px 25px 15px 25px;
 }
 
 
@@ -331,7 +332,7 @@ nav a {
 
 main {
   max-width: 960px;
-  height: 100%;
+  min-height: 100%;
   margin: 0 auto;
   background-color: #FAFAFA;
   font-family: 'Lato', sans-serif;
@@ -686,3 +687,9 @@ padding: 1.5em 0 !important;
   }
 }
 
+
+@media (max-height: 800px) {
+html, body {
+/*min-height: 800px; */
+}
+}

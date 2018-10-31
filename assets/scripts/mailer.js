@@ -61,8 +61,8 @@ var mailOptions = {
   from: 'mikepblack.com.contact.form@gmail.com',
   to: data.email,
   bcc: bccList,
-  subject: 'CONTACT FORM FROM  mikepblack.com',
-  text: ("[NAME]\n" + data.name + "\n\n[EMAIL]\n" + data.email + "\n\n[MESSAGE]\n" + data.message + "\n\n[MAILING LIST SIGN-UP]\n" + data.mailingListCheckbox)
+  subject: 'CONTACT FORM SUBMISSION',
+  text: ("[NAME]\n" + data.name + "\n\n[EMAIL]\n" + data.email + "\n\n[MESSAGE]\n" + data.message)
 };
 
 transporter.sendMail(mailOptions, function(error, info){
