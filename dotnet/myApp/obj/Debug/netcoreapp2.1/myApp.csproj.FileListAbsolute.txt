@@ -1,0 +1,11 @@
+/var/www/html/dotnet/myApp/bin/Debug/netcoreapp2.1/myApp.deps.json
+/var/www/html/dotnet/myApp/bin/Debug/netcoreapp2.1/myApp.runtimeconfig.json
+/var/www/html/dotnet/myApp/bin/Debug/netcoreapp2.1/myApp.runtimeconfig.dev.json
+/var/www/html/dotnet/myApp/bin/Debug/netcoreapp2.1/myApp.dll
+/var/www/html/dotnet/myApp/bin/Debug/netcoreapp2.1/myApp.pdb
+/var/www/html/dotnet/myApp/obj/Debug/netcoreapp2.1/myApp.csprojAssemblyReference.cache
+/var/www/html/dotnet/myApp/obj/Debug/netcoreapp2.1/myApp.csproj.CoreCompileInputs.cache
+/var/www/html/dotnet/myApp/obj/Debug/netcoreapp2.1/myApp.AssemblyInfoInputs.cache
+/var/www/html/dotnet/myApp/obj/Debug/netcoreapp2.1/myApp.AssemblyInfo.cs
+/var/www/html/dotnet/myApp/obj/Debug/netcoreapp2.1/myApp.dll
+/var/www/html/dotnet/myApp/obj/Debug/netcoreapp2.1/myApp.pdb
