@@ -461,7 +461,7 @@ figcaption {
 }
 
 .project-youtube {
-  max-width: 100%;
+  max-width: 87%;
   border: 1px solid #cccccc;
   margin: 1em 2em 2em 6%;
 }
@@ -472,7 +472,7 @@ figcaption {
 }
 
 .project-img {
-  max-width: 100%;
+  max-width: 87%;
   border: 1px solid #cccccc;
   margin: 1em 2em 2em 6%;
   float: left;
