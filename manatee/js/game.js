@@ -34,6 +34,14 @@ $(document).ready (function( ){
 
     function create() {
 
+game.scale.scaleMode = Phaser.ScaleManager.aspectRatio;
+game.scale.pageAlignVertically = true;
+game.scale.pageAlignHorizontally = true;
+game.scale.setShowAll();
+game.scale.refresh();
+ 
+
+
       music = game.add.audio('underwaterMusic',1,true);
       music.play('',0,.7,true);
       //      music = game.add.audio('underwaterMusic');
@@ -54,8 +62,9 @@ $(document).ready (function( ){
 
       game.physics.arcade.enable(player);
 
-      player.body.bounce.y = 0.2;
-      player.body.gravity.y = 40;
+      player.body.bounce.y = 0.5;
+      player.body.bounce.x = 0.3;
+      player.body.gravity.y = 0;
       player.body.collideWorldBounds = true;
 
       player.animations.add('left', [2, 1], 5, true);
@@ -80,7 +89,7 @@ player.input.enableDrag(true);
         cabbageSprite[i].body.collideWorldBounds = true;
       }
 
-      scoreText = game.add.text(16, 16, 'Feeding time! Press M to mute sound', { fontSize: '32px', fill: '#FFF' });
+      scoreText = game.add.text(16, 16, 'Feeding time! Click or tap to move', { fontSize: '32px', fill: '#FFF' });
 
       cursors = game.input.keyboard.createCursorKeys();
       fireButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
@@ -93,14 +102,46 @@ player.input.enableDrag(true);
 
 
     function update() {
+game.scale.setShowAll();
+game.scale.refresh();
 
       game.physics.arcade.collide(player, platforms);
       game.physics.arcade.collide(cabbages, platforms);
 
       game.physics.arcade.overlap(player, cabbages, collectCabbage, null, this);
 
-      player.body.velocity.x = 0;
+      var activePointer = game.input.activePointer;
+//  only move when you click
 
+var previousDirection = "none";
+
+    if (game.input.activePointer.isDown)
+    {
+        game.physics.arcade.moveToPointer(player, 200);
+
+
+    if (activePointer.x > player.body.x) {
+      player.animations.play('right');
+    }
+     
+    else if (activePointer.x < player.body.x) {
+      player.animations.play('left');
+    }  
+
+
+        //  if it's overlapping the mouse, don't move any more
+        if (Phaser.Rectangle.contains(player.body, game.input.x, game.input.y))
+        {
+            player.body.velocity.setTo(0, 0);
+        } else if (previousDirection == "right") {
+        player.body.velocity.setTo(100, 0);
+} else if (previousDirection == "left") {
+
+        player.body.velocity.setTo(-100, 0);
+    }
+}
+
+/*
       if (muteButton.isDown)
       {
         var currDate = new Date(); 
@@ -130,7 +171,8 @@ player.input.enableDrag(true);
           }
         }
       }
-
+*/
+      /*
       if (cursors.left.isDown)
       {
         player.body.velocity.x = -150;
@@ -164,7 +206,7 @@ player.input.enableDrag(true);
       {
         player.body.velocity.y = 200;
       } 
-
+*/
       /*
          for (var i = 0; i < NUM_OF_CABBAGES; i++)
          {
@@ -184,7 +226,7 @@ player.input.enableDrag(true);
 
       if (remaining < 1)
       {
-        game.add.text(640, 400, 'YOU WIN', { fontSize: '64px', fill: '#FFF' });
+        game.add.text(520, 400, 'YOU WIN', { fontSize: '3rem', fill: '#FFF' });
         //scoreText.text = "You win!";
         youWinSound.play();
       }

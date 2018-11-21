@@ -1,0 +1,243 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/open-sans/OpenSans-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bowlby One SC';
+  src: url('../assets/fonts/Bowlby/BowlbyOneSC-Regular.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+@keyframes fade {
+	0% {
+		background-color: rgba(0, 0, 255, 0);
+		opacity: 0
+	}
+	50% {
+		background-color: rgba(0, 0, 255, 0.5);
+		opacity: 1
+	}
+	100% {
+		background-color: rgba(0, 0, 255, 1);
+		opacity: 1
+	}
+}
+
+body {
+	height: 100vh;
+	font-size: 18px;
+	background: #003366;
+}
+
+#water-layer {
+	height: 100vh;
+	background: -webkit-linear-gradient(135deg, #2ebf91, #8360c3);
+	background: linear-gradient(135deg, #2ebf91, #8360c3);
+	-webkit-animation: fade 3s;
+	animation: fade 3s;
+	-moz-animation: fade 3s;
+	-o-animation: fade 3s;
+}
+
+#welcome-text {
+display: block;
+width: 80%;
+margin: auto;
+margin-top: 5%;
+text-align: center;
+font-size: 6rem;
+
+} 
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bowlby One SC', sans-serif;
+	letter-spacing: 5px;
+	color: #ffffff;
+}
+
+h1 {
+	font-size: 3rem !important;
+}
+
+p {
+	padding: 0 1rem 1rem 1rem;
+}
+
+ul li {
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+}
+
+figcaption {
+	color: #000000;
+}
+
+header, main, footer {
+	width: 90%;
+	max-width: 960px;
+	margin: auto;
+	padding-top: 2rem;
+	color: #ffffff;
+}
+
+article {
+	background-color: #b4dcc9;
+	border-radius: 1rem;
+	height: 100%;
+	font-size: 1.25rem;
+	color: #000000;
+	padding: 3%;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+ul li {
+	list-style-type: none;
+	margin-left: 2rem;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+@keyframes manatee-rock {
+	0% {
+    transform:  rotate(-10deg);
+  }
+  100% {
+		transform:  rotate(10deg);
+  }
+}
+
+@keyframes manatee-spin {
+
+	0% {
+    transform:  rotate(-360deg);
+  }
+  100% {
+		transform:  rotate(0deg);
+  }
+}
+
+#logo {
+	height: 10rem;
+	max-width: 100%;
+	animation-name: manatee-rock;
+	animation-direction: alternate-reverse;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	align-self: center;
+}
+
+@keyframes manatee-fade-in {
+	0% {
+    opacity:0;
+    transform:  rotate(-200deg) scale(0.1);
+  }
+  100% {
+    opacity:1;
+		transform:  rotate(0deg) scale(1);
+  }
+}
+
+#animation-manatee-head-on {
+	display: block;
+	max-width: 80%;
+	margin: auto;
+	margin-top: 5%;
+	z-index: -1;
+	animation-name: manatee-fade-in;
+	animation-duration: 5s;
+}
+
+#animation-manatee-head-on:checked {
+	transition: transform 3s;
+transform: rotate(180deg) scale(10);
+}
+
+nav img {
+	width: 10rem !important;
+}
+
+nav img:hover {
+	animation-name: manatee-spin;
+	animation-duration: 1s;
+}
+
+
+
+.gallery {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery figure {
+	padding: 1rem;
+}
+
+.gallery figure img {
+border-radius: 1rem;
+}
+
+#manatee-rescue, #manatee-about {
+	width: 400px;
+	max-width: 50%;
+	padding: 0 1rem 0 1rem;
+	display: block;
+	float: right;
+}
+
+.art-blurb {
+	width: 400px;
+	max-width: 50%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+/***** MEDIA QUERIES *****/
+@media (max-width: 700px) {
+	h1 {
+		font-size: 2rem;
+
+}
+
+nav img {
+	max-width: 100%;
+}
+
+
+
+
+}
+
+
+
