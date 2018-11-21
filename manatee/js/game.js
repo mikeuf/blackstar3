@@ -226,7 +226,7 @@ var previousDirection = "none";
 
       if (remaining < 1)
       {
-        game.add.text(520, 400, 'YOU WIN', { fontSize: '3rem', fill: '#FFF' });
+        game.add.text(520, 400, 'YOU WIN', { fontSize: '32px', fill: '#FFF' });
         //scoreText.text = "You win!";
         youWinSound.play();
       }

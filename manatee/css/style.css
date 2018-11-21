@@ -18,13 +18,13 @@
 body
 {
   font-family: "Verdana", sans-serif;
-  background: linear-gradient(to bottom, #000, #59788F);
+  background: linear-gradient(to bottom, #000, #330099);
   height:100vw;
   font-size: 18px;
 }
 
 header {
-  width: 80%;
+  width: 1280px;
   max-width: 100%;
   margin: auto !important;
   padding-top: 1rem;
@@ -42,7 +42,7 @@ ul {
 }
 
 main {
-  width: 80%;
+  width: 90%;
   margin: auto !important;
 }
 
@@ -60,6 +60,7 @@ h1
   margin: auto;
   max-width: 100%;
   max-height: 100%;
+/*
   background: linear-gradient(to bottom, #FFF, #EAEBDB);
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -72,7 +73,7 @@ h1
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   box-shadow: 0.25rem 0.25rem 0 0.25rem #FDBB30;
-  /* box-shadow: 0 0 500px 5px #CEB888; */
+  */
 }
 
 .footer
@@ -85,6 +86,7 @@ h1
 
 li {
   list-style: none;
+  padding-left: 1rem;
 }
 
 li a
@@ -112,5 +114,6 @@ a:hover
 }
 
 canvas {
-  max-width: 100%;
+  border: 1rem solid #fdbb30;
+  border-radius: 1rem;
 }
