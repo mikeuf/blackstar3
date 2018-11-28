@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	height: 100vh;
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-size: 16px;
+	padding: 5%;
+	background: #e1eec3;  
+	background: -webkit-linear-gradient(to bottom, #f05053, #e1eec3);  
+	background: linear-gradient(to bottom, #f05053, #e1eec3); 
+	background-size: cover;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+	display: block;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+ul li {
+	list-style-type: none;
+	margin-left: 2rem;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+p, h1, h2, h3, h4, h5, h6, #div1 {
+	font-family: 'Verdana';
+	padding-bottom: 0.5rem;
+}
+
+#logo {
+	width: 150px;
+	max-width: 100%;
+	align-self: center;
+}
+
+@media (min-width: 700px) {
+	body {
+		font-size: 20px;
+	}
+}
