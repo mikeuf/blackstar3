@@ -21,13 +21,26 @@
   font-weight: normal;
   font-style: normal;
 }
-
+html {
+height: 100%;
+}
 body
 {
+      height: 100%;
+          margin: 0;
+              background-repeat: no-repeat;
+                  background-attachment: fixed;
   font-family: 'Distant Galaxy', sans-serif;
+  color: #fdbb30;
   background: linear-gradient(to bottom, #000, #330099);
+  background-size: cover;
   height:100vw;
   font-size: 18px;
+}
+
+p {
+font-size: 1.25rem;
+letter-spacing: 0.15rem;
 }
 
 header {
