@@ -555,6 +555,10 @@ figcaption {
   padding: 2em 0 0.5em 0;
 }
 
+#resume-wrapper ul li {
+  margin-left: 6%;
+}
+
 #resume-deck {
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
@@ -565,19 +569,18 @@ figcaption {
   padding: 0 6% 0 6%;
 }
 
-#resume-body {
+#resume-body-1-col {
+  padding: 0 6% 0 6%;
+
+}
+
+#resume-body-2-col {
   column-width: 300px;
   column-gap: 8ch;
   column-count: 2;
   padding: 0 6% 0 6%;
 }
 
-#resume-body ul {
-}
-
-#resume-body ul li {
-  padding: 0.5rem 0 0.5rem 0;
-}
 
 #resume-skills {
   text-align: justify;
