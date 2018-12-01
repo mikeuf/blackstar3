@@ -6,7 +6,7 @@
   font-size: 100%;
 }
 
-
+/*
 @font-face {
   font-family: 'Lora';
   src: url('../assets/fonts/lora/lora-regular.ttf');
@@ -20,18 +20,6 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Lora';
-  src: url('../assets/fonts/lora/lora-700.ttf');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lora';
-  src: url('../assets/fonts/lora/lora-700italic.ttf');
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
   font-family: 'Lato';
   src: url('../assets/fonts/lato/lato-regular.ttf');
   font-weight: normal;
@@ -43,30 +31,7 @@
   font-weight: normal;
   font-style: italic;
 }
-@font-face {
-  font-family: 'Lato';
-  src: url('../assets/fonts/lato/lato-700.ttf');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url('../assets/fonts/lato/lato-700italic.ttf');
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url('../assets/fonts/lato/lato-900.ttf');
-  font-weight: 900;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url('../assets/fonts/lato/lato-900italic.ttf');
-  font-weight: 900;
-  font-style: italic;
-}
-
+*/
 
 html {
   min-height: 100%;
@@ -420,7 +385,7 @@ figcaption {
 
 #welcome h1 {
   font-family: 'Lato', sans-serif;
-  font-weight: 900;
+  font-weight: black;
   font-size: 4rem;
   margin: 0 auto;
   padding: 15% 0 0 0;
@@ -532,6 +497,7 @@ figcaption {
   padding: 0;
 }
 
+
 #resume-contact {
   color: #5a8fcc;
   font-size: 1rem;
@@ -552,11 +518,17 @@ figcaption {
   font-size: 1.5rem;
   font-weight: 700;
   color: #5a8fcc;
-  padding: 2em 0 0.5em 0;
+  padding: 1em 0 0.5em 0;
 }
 
 #resume-wrapper ul li {
   margin-left: 6%;
+}
+
+#resume-subheading {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+font-weight: 300 !important;
 }
 
 #resume-deck {
@@ -686,7 +658,7 @@ padding: 1.5em 0 !important;
 
   #welcome h1 {
     font-family: 'Lato', sans-serif;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 7rem;
     max-width: 650px;
     margin: 0 auto;
