@@ -447,34 +447,55 @@ figcaption {
   padding-top: 2em;
 }
 
-#project-btn-wrapper {
+.project-btn-wrapper {
   margin: auto;
   text-align: center;
 }
 
-#project-btn {
+.project-btn {
   display: block;
   margin: 0 auto 1em auto;
+  color: #ffffff;
+  background-color: #5c51ed;
+
+    padding: 8px 20px 8px 20px;
+      text-decoration: none;
+        -webkit-appearance: none; /* disables iOS button styling */
 }
 
-#project-exe-btn {
+.project-exe-btn {
   display: block;
   margin: 0 auto 1em auto;
   background-color: #c6726a;
 }
 
-#project-btn-ttt {
+.project-btn-indigo {
   display: inline;
   margin: 0 auto 1em auto;
+  color: #ffffff;
+  background-color: #5c51ed;
+
+    padding: 8px 20px 8px 20px;
+      text-decoration: none;
+        -webkit-appearance: none; /* disables iOS button styling */
+
 }
 
-#project-exe-btn-ttt {
+.project-btn-red {
   display: inline;
   margin: 0 auto 1em auto;
+  color: #ffffff;
   background-color: #c6726a;
+    padding: 8px 20px 8px 20px;
+      text-decoration: none;
+        -webkit-appearance: none; /* disables iOS button styling */
 }
 .project-element p {
   padding-top: 1em;
+}
+
+iframe {
+border: 0;
 }
 
 #resume-wrapper {
